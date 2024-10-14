@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Y Conrado">
+    <meta name="description" content="'solicitação de agendamento de test drive de veículo'
+    <title>Test_Drive/Website</title>
+    <link rel="icon" href="" type="image/pgn">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+
+    <header>
+
+<h1>Concessionária Conrado</h1>
+<h2><strong>Oferece test drive!</strong></h2>
+
+    </header>
+
+    <main>
+<fieldset>
+        
+    <!--Formulário sore informações pessoais-->
+
+    <legend>Informações pessoais</legend>
+    <p>
+        <label for="password">Nome completo:</label>
+        <input type="name" name="nome" id="nome" placeholder="seu nome" required>
+</p>  
+<p>
+    <label for="age">Idade:</label>
+    <input type="number" name="age" id="age" min="0" max="120" step="5" placeholder="18" required>
+</p>
+
+<p>
+    <label for="Number">Número de celular:</label>
+    <input type="tel" name="número_de_celular" id="número" placeholder="+99 (99) 99999-9999" required>
+</p>
+    
+    <p>
+        <form action="submit.php" method="post">
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="xyzxyzxyz@email.com" autocomplete="on" required autofocus>
+        </p>
+        
+      
+        
+        <p>
+            
+        </datalist>  
+        
+        </p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    
+    </fieldset>
+    <fieldset>
+        
+        <!--Formulário para informações do test drive-->
+    
+        <legend>Test Drive</legend>
+        <label>Voce tem habilitação?</label>
+        <div>
+          <input type="radio" id="habilitação-sim" name="habilitação" value="sim" required />
+          <label for="habilitação-sim">Sim</label>
+        </div>
+        <div>
+          <input type="radio" id="habilitação-não" name="habilitação" value="não" />
+          <label for="habilitaçaõ-não">Não</label>
+        </div>
+        
+        <p>
+            <label for="Tipo_do_carro">Tipo do carro:</label>
+            <input type="name" name="nome_do_carro" id="nome_do_carro" placeholder="nome do carro" required>
+    </p>  
+    <p>
+        <label for="Number">Pretende comprar o carro em:</label>
+        <input type="text" name="número_de_celular" id="número" placeholder="Imediato, 7 dias, 1 mês..." required>
+    </p>
+        
+            
+    <p>
+        <label for="password">Data do test drive:</label>
+        <input type="date" name="data" id="date" placeholder="DD/MM/AAAA" required>
+</p>
+            
+            <p>
+                
+            </datalist>  
+            
+            </p>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        
+        </fieldset> 
+
+
+
+</main>
+
+
+
+    <footer>
+<hr>
+
+        <p>Local: Avenida dos Automóveis, 500 - Bairro rodas, Cidade Motor</p>
+<p>Telefone: +55 (11) 99999-9999</p>
+<p>Horário de funcinamento: Seg-Sex, das 8h-20h</p>
+
+    </footer>
+
+
+
+
+
+</body>
+
+
+</html>
